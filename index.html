@@ -15,16 +15,17 @@
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/cricbrawl.png" width="82" height="56" alt="logo" class="logo-1"> </a>
+  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/logo-dark.svg" width="120" height="60" alt="logo" class="logo-1"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
@@ -45,16 +46,16 @@
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="banner-text">
-            <h2 class="white">Experience the Thrill of Fantasy Cricket</h2>
+            <h3 class="white">Experience the Thrill of Fantasy Cricket</h3>
             <h6 class="white">Crafting Winning Strategies for Cricket Fans in the USA</h6>
             <p class="banner-text white">Unleash your cricketing expertise on CricBrawl, the ultimate fantasy cricket platform. Sign up now to create your dream team, compete against friends, and win exciting prizes. With real-time updates and immersive gameplay, CricBrawl offers an unparalleled cricketing experience for fans across the USA.</p>
             <ul>
-              <li><a href="#"><img style="opacity: 0.5;" src="images/appstore.svg" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
-              <li><a href="#"><img style="opacity: 0.5;" src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
+              <li><a ><img  height="40px" src="images/appstore.svg" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+              <li><a ><img  src="images/playstore.svg" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
+        <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp"/> </div>
       </div>
     </div>
   </div>
@@ -155,7 +156,7 @@
               </div>
             </div>
             <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
+              <div class="feature-mobile"> <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp"/> </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
@@ -264,7 +265,7 @@
               <div class="contact-info white">
                 <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
                   <div class="media-body">
-                    <p class="text-uppercase">Address</p>
+                    <p class="text-uppercase">HVD Gaming LLC</p>
                     <p class="text-uppercase">Dallas, TX</p>
                   </div>
                 </div>
@@ -311,8 +312,8 @@
       <div class="col-md-12">
         <div class="section-content text-center">
           <ul>
-            <li><a href="#"><img style="opacity: 0.5;" src="images/appstore.svg" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
-            <li><a href="#"><img style="opacity: 0.5;" src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
+            <li><a href="#"><img height="40px" src="images/appstore.svg" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+            <li><a href="#"><img  src="images/playstore.svg" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
           </ul>
         </div>
       </div>
@@ -371,11 +372,11 @@ $(window).on("scroll",function () {
 	navbar = $(".navbar");
 	
 	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/cricbrawl.png');
+	$('.navbar-logo img').attr('src','images/logo-light.svg');
 	navbar.addClass("nav-scroll");
 
 }else{
-	$('.navbar-logo img').attr('src','images/cricbrawl.png');
+	$('.navbar-logo img').attr('src','images/logo-dark.svg');
 	navbar.removeClass("nav-scroll");
 }
 
@@ -385,10 +386,10 @@ $(window).on("load",function (){
 	navbar = $(".navbar");
 	
 	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/cricbrawl.png');
+	$('.navbar-logo img').attr('src','images/logo-light.svg');
 	navbar.addClass("nav-scroll");
 	}else{
-	$('.navbar-logo img').attr('src','images/cricbrawl.png');
+	$('.navbar-logo img').attr('src','images/logo-dark.svg');
 	navbar.removeClass("nav-scroll");
 	}
 
