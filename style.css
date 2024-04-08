@@ -96,6 +96,17 @@ h6 {
 .nav-scroll .active {
 	position: relative;
 }
+.extra-content {
+	background: #D7E8F8;
+	color: #292929;
+	/* background: linear-gradient(to right, #1B6EBB, #5C97CE); */
+	padding:100px 0px;
+	position:relative;
+}
+
+.list-spacing {
+	margin-left: 1rem;
+}
 .banner {
 	background: #1B6EBB;
 	background: linear-gradient(to right, #1B6EBB, #5C97CE);

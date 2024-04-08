@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CricBrawl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script src="https://kit.fontawesome.com/7aa4814fd6.js" crossorigin="anonymous"></script>
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+</html>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-scroll">
+        <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="../images/logo-light.svg"
+                    width="120" height="60" alt="logo" class="logo-1"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="fas fa-bars"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="../index.html" data-scroll-nav="0">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html" data-scroll-nav="1">About</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html" data-scroll-nav="2">Features</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html" data-scroll-nav="5">Faq</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html" data-scroll-nav="6">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <section class="extra-content" data-scroll-index='0'>
+        <div class="container">
+            <h3>Fantasy Points for Batting</h3>
+            <p>The key metric for batting is &#8220;Runs&#8221;. The secondary metric is &#8220;Strike Rate&#8221;.
+                Calculations are done accordingly.</p>
+            <p>
+                <strong>Key metric (Runs) points:</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+1 point PER run</li>
+                <li>+1 point PER four</li>
+                <li>+2 points PER six</li>
+                <li>
+                    <span style="color: #800000;">-2 points if dismissed for a 0</span>
+                </li>
+            </ul>
+            <p>
+                <strong>Bonus Points</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+4 bonus points for scoring 30 runs</li>
+                <li>+4 bonus points for a half-century</li>
+                <li>+8 bonus points for a century</li>
+            </ul>
+            <p>
+                <strong>Secondary metric (Strike Rate) points:</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>
+                    <span style="color: #800000;">-6 points if Strike Rate is below 50</span>
+                </li>
+                <li>
+                    <span style="color: #800000;">-4 points if Strike Rate is between 50 &#8211; 50.99</span>
+                </li>
+                <li>
+                    <span style="color: #800000;">-2 points if Strike Rate is between 60 &#8211; 70</span>
+                </li>
+                <li>0 points if Strike Rate is between 70-130</li>
+                <li>+2 points if Strike Rate is between 130-150</li>
+                <li>+4 points if Strike Rate is between 150.01-170</li>
+                <li>+6 points if Strike Rate is more than 170</li>
+            </ul>
+            <br />
+            <h3>Fantasy Points for Bowling</h3>
+            <p>The primary metric for bowlers is naturally Wickets &#8211; but Maiden overs are also an important
+                side metric. The secondary metric for bowlers is the Economy Rate.</p>
+            <p>
+                <strong>Key metric (Wickets) and side metric (Maidens)</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+12 points per maiden over</li>
+                <li>+20 points PER wicket</li>
+                <li>-2 points PER wide</li>
+                <li>-2 points PER no ball</li>
+            </ul>
+            <p>
+                <strong>Bonus Points</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+4 bonus points for taking three wickets in a single match</li>
+                <li>+4 bonus points for taking four wickets in a single match (Total 8)</li>
+                <li>+8 bonus points for taking five OR MORE wickets in a single match (Total 16)</li>
+            </ul>
+            <p>
+                <strong>Secondary metric (Economy Rate) points:</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>6 points if his economy rate is below 5 runs per over</li>
+                <li>4 points if his economy rate is between 5 &#8211; 5.99 runs per over</li>
+                <li>2 points if his economy rate is between 6 &#8211; 7 runs per over</li>
+                <li>0 points if economy rate is between 7 and 10 runs per over</li>
+                <li>
+                    <span style="color: #800000;">-2 points if his economy rate is between 10 &#8211; 11 runs per
+                        over</span>
+                </li>
+                <li>
+                    <span style="color: #800000;">-4 points if his economy rate is between 11.01 &#8211; 12 runs per
+                        over</span>
+                </li>
+                <li>
+                    <span style="color: #800000;">-6 points if his economy rate is above 12 runs per over</span>
+                </li>
+            </ul>
+            <br />
+            <h3>Points for Catching / Fielding</h3>
+            <p>Catching is limited to non-bowler Catches (catch-and-bowled is separate from Catches). There are 3
+                metrics here, of them Catches are the key metric and the other two secondary.</p>
+            <p>
+                <strong>Key metric points:</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+8 points PER catch</li>
+            </ul>
+            <p>
+                <strong>Bonus Points:</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+4 bonus points for taking three or more catches</li>
+            </ul>
+            <p>
+                <strong>Secondary Metrics:</strong>
+            </p>
+            <ul class="list-spacing">
+                <li>+6 points PER run out</li>
+                <li>+6 points PER stumped</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer-copy">
+        <div class="container pt-5 ">
+            <div class="row border-bottom">
+                <div class="col-md-3 col-sm-12 mb-3 text-center">
+                    <img src="../images/logo-light.svg" width="200px" height="60px" class="img-fluid" alt="logo">
+
+                </div>
+                <div class="col-md-9 col-sm-12">
+
+                    <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+                        <h6 class="mb-4 font-weight-bold text-uppercase">Learn more</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">How To Play</a></li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="fantasy-points.html">Fantasy
+                                    Points</a></li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">FAQs</a></li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">Terms and
+                                    Conditions</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">Privacy Policy</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">Apps</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                        <h6 class="mb-4 font-weight-bold text-uppercase">Connect</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://twitter.com/cricbrawl"><i class="fa fa-twitter mr-1"></i> Twitter</a>
+                            </li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.linkedin.com/company/cricbrawl" target="_blank"><i
+                                        class="fa fa-facebook mr-1"></i>
+                                    LinkedIn</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.instagram.com/cricbrawl/" target="_blank"><i
+                                        class="fa fa-instagram mr-1"></i>
+                                    Instagram</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.youtube.com/@cricbrawl" target="_blank"><i
+                                        class="fa fa-youtube mr-1"></i>
+                                    YouTube</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.facebook.com/profile.php?id=61557898962679" target="_blank"><i
+                                        class="fa fa-facebook mr-1"></i> Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>2024 &copy; CricBrawl. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
