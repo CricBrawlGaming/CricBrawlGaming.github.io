@@ -106,6 +106,10 @@ h6 {
 
 .list-spacing {
 	margin-left: 1rem;
+
+}
+.list-spacing li {
+	margin-bottom: 1rem;
 }
 .banner {
 	background: #1B6EBB;
