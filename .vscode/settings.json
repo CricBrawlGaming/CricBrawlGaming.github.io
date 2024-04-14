@@ -8,5 +8,13 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+    },
     "vs-code-prettier-eslint.prettierLast": false // set as "true" to run 'prettier' last not first
   }
