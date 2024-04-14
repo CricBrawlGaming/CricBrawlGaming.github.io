@@ -48,6 +48,7 @@
 
     }
   </script>
+
 </head>
 
 <body>
@@ -90,7 +91,15 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp" /> </div>
+          <div class="feature-mobile">
+            <div class="slider-container" id="initImage">
+              <img src="images/init-1.png" class="img-fluid wow fadeInUp slider-image"
+                style="width: 370px; height: 700px;" />
+              <span class="prev">&#10094;</span>
+              <span class="next">&#10095;</span>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp" /> </div> -->
         </div>
       </div>
     </div>
@@ -207,7 +216,12 @@
                 </div>
               </div>
               <div class="col-md-4 d-none d-md-block d-lg-block">
-                <div class="feature-mobile"> <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp" />
+                <div class="feature-mobile">
+                  <div class="slider-container" id="sliderImage">
+                    <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp slider-image" />
+                    <span class="prev">&#10094;</span>
+                    <span class="next">&#10095;</span>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12">
@@ -542,6 +556,22 @@
     });
 
   </script>
+
+  <!-- Image Slider -->
+
+  <script src="js/slider.js"></script>
+
+  <script>
+
+    const images1 = ["images/iphone-screen.svg", "images/feature-1.png", "images/feature-2.png", "images/feature-3.png", "images/feature-4.png", "images/feature-5.png", "images/feature-6.png", "images/feature-7.png"];
+    const images2 = ["images/init-1.png", "images/init-2.png", "images/init-3.png"]
+
+    // Initialize Slider class with container ID and images array
+    const slider = new Slider('initImage', images2);
+    const slider2 = new Slider('sliderImage', images1);
+
+  </script>
+
 </body>
 
 </html>

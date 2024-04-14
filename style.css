@@ -315,6 +315,41 @@ h6 {
 .single-feature p {
 	font-size: 13px;
 }
+.slider-container {
+    position: relative;
+    display: inline-block; /* Ensures container only takes the space it needs */
+
+}
+.feature-mobile {
+    position: relative;
+}
+.slider-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    object-fit: contain; /* Maintain aspect ratio while fitting inside container */
+}
+
+.prev, .next {
+    position: absolute;
+	visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
 .icon-border {
 }
 .icon-border span {
