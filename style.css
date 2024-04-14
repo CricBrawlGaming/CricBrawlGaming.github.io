@@ -111,6 +111,16 @@ h6 {
 .terms-spacing li {
 	margin-bottom: 1rem;
 }
+
+.extra-content p {
+	text-align: justify;
+}
+
+.extra-content h5 {
+	padding-top: 1rem;
+	text-align: left;
+}
+
 .banner {
 	background: #1B6EBB;
 	background: linear-gradient(to right, #1B6EBB, #5C97CE);
