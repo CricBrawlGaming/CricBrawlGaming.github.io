@@ -26,6 +26,7 @@ h6 {
 }
 .white {
   color: #ffffff !important;
+  font-weight: 500;
 }
 .black {
   color: #000000;
@@ -158,6 +159,7 @@ h6 {
 }
 .banner-text p {
   margin: 40px 0px;
+  font-weight: normal;
 }
 .banner-text ul {
   list-style: none;
@@ -509,7 +511,7 @@ input {
   cursor: pointer;
 }
 .contact-info {
-  padding: 2rem 2rem 1rem;
+  padding: 0.5rem 2rem 0.5rem;
   border-radius: 8px;
   background: #1b6ebb;
   background: linear-gradient(to left, #1b6ebb, #5c97ce);
