@@ -172,12 +172,11 @@
               </ul>
             </div>
           </div>
-          <div class="feature-mobile">
-            <div class="slider-container" id="initImage">
-              <img src="images/init-1.png" class="img-fluid slider-image wow zoomIn"
-                style="width: 370px; height: 700px;" />
-              <span class="prev">&#10094;</span>
-              <span class="next">&#10095;</span>
+          <div class="image-container">
+            <div class="carousel">
+              <img src="images/init-1.png" />
+              <img src="images/init-2.png" />
+              <img src="images/init-3.png" />
             </div>
           </div>
           <!-- <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp" /> </div> -->
@@ -269,7 +268,7 @@
           </div>
           <div class="section-content text-center">
             <div class="row">
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-3 col-sm-12">
                 <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
                   <div class="media-body text-right media-right-margin">
                     <h5>Join the Thrilling Arena</h5>
@@ -296,16 +295,23 @@
                   <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
                 </div>
               </div>
-              <div class="col-md-4 d-none d-md-block d-lg-block">
-                <div class="feature-mobile">
-                  <div class="slider-container" id="sliderImage">
-                    <img src="images/iphone-screen.svg" class="img-fluid wow fadeInUp slider-image" />
-                    <span class="prev">&#10094;</span>
-                    <span class="next">&#10095;</span>
+              <!-- Feature Image Slider-->
+              <div class="col-md-6 d-flex justify-content-center">
+                <div class="feat-image-container">
+                  <div class="feat-carousel">
+                    <img src="images/iphone-screen.svg" />
+                    <img src="images/feature-1.png" />
+                    <img src="images/feature-2.png" />
+                    <img src="images/feature-3.png" />
+                    <img src="images/feature-4.png" />
+                    <img src="images/feature-5.png" />
+                    <img src="images/feature-6.png" />
+                    <img src="images/feature-7.png" />
                   </div>
                 </div>
+
               </div>
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-3 col-sm-12">
                 <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
                   <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double"
                       aria-hidden="true"></span> </div>
@@ -597,10 +603,6 @@
           $('.video-popup iframe').attr('src', video_src);
         }
       });
-
-      $('.slider').bxSlider({
-        pager: false
-      });
     });
 
     $(window).on("scroll", function () {
@@ -647,13 +649,16 @@
   <script src="js/slider.js"></script>
 
   <script>
-
-    const images1 = ["images/iphone-screen.svg", "images/feature-0.png", "images/feature-1.png", "images/feature-2.png", "images/feature-3.png", "images/feature-4.png", "images/feature-5.png", "images/feature-6.png", "images/feature-7.png"];
-    const images2 = ["images/init-1.png", "images/init-2.png", "images/init-3.png"]
-
-    // Initialize Slider class with container ID and images array
-    const slider = new Slider('initImage', images2);
-    const slider2 = new Slider('sliderImage', images1);
+    const slider1 = new Slider(
+      ".image-container",
+      ".carousel",
+      2500
+    );
+    const slider2 = new Slider(
+      ".feat-image-container",
+      ".feat-carousel",
+      2500
+    );
 
   </script>
 

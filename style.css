@@ -324,44 +324,7 @@ h6 {
 .single-feature p {
   font-size: 13px;
 }
-.slider-container {
-  position: relative;
-  display: inline-block; /* Ensures container only takes the space it needs */
-  left: 0;
-  transition: left 0.5s ease; /* Smooth transition for slide animation */
-}
 
-.feature-mobile {
-  position: relative;
-}
-.slider-image {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  max-height: 100%; /* Ensure image doesn't exceed container height */
-  object-fit: contain; /* Maintain aspect ratio while fitting inside container */
-}
-
-.prev,
-.next {
-  position: absolute;
-  visibility: hidden;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
 .icon-border {
 }
 .icon-border span {
@@ -426,36 +389,45 @@ h6 {
   border-radius: 5px !important;
   box-shadow: none !important;
 }
-.slider-item {
-  padding: 20px;
+
+.image-container {
+  height: 800px;
+  max-width: 380px;
+  overflow: hidden;
 }
-.slider .test-img img {
-  border: 12px solid #fff;
-  border-radius: 50%;
+
+.image-container .carousel {
+  display: flex;
+  height: 100%;
   width: 100%;
-  height: auto;
+  transition: all 0.4s ease;
 }
-.test-img {
-  float: left;
-  width: 20%;
-  margin-right: 5%;
+
+.carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.test-text {
-  float: left;
-  width: 75%;
+
+.feat-image-container {
+  height: 800px;
+  max-width: 400px;
+  overflow: hidden;
 }
-.slider .title {
-  display: block;
-  position: relative;
-  margin: 0 0 20px;
-  font-size: 1.125em;
-  line-height: 1.25;
+
+.feat-image-container .feat-carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
 }
-.slider .title span {
-  display: block;
-  font-size: 1.5em;
-  font-weight: 700;
+
+.feat-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
+
 .faq {
   background: #fafafa;
   border-bottom: 1px solid #e4e4e4;
