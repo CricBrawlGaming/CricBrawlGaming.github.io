@@ -415,6 +415,12 @@ h6 {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .feat-image-container {
+    height: auto;
+  }
+}
+
 .feat-image-container .feat-carousel {
   display: flex;
   height: 100%;
