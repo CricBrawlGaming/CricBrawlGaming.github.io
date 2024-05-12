@@ -391,8 +391,8 @@ h6 {
 }
 
 .image-container {
-  height: 800px;
-  max-width: 380px;
+  height: 600px;
+  max-width: 296px;
   overflow: hidden;
 }
 
@@ -411,7 +411,7 @@ h6 {
 
 .feat-image-container {
   height: 800px;
-  max-width: 400px;
+  max-width: 395px;
   overflow: hidden;
 }
 
