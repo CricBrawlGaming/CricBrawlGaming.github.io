@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Understanding Fantasy Points System on CricBrawl - Batting, Bowling, and Fielding</title>
+    <meta name="description"
+        content="Learn how fantasy points are calculated on CricBrawl for batting, bowling, and fielding performances. Dive into the key metrics for each category, bonus points, and secondary metrics to maximize your team's score in fantasy cricket contests. Start strategizing and earning points today!">
+    <meta name="keywords"
+        content="Cricket in America, Fantasy Cricket App USA, Cricket Fantasy App Download USA, USA Cricket, Best Fantasy Cricket App USA, Mobile Fantasy Cricket USA, Fantasy Cricket USS, Play Fantasy Cricket USA, Real Cash Fantasy Cricket USA, USA Fantasy Cricket Leagues">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script src="https://kit.fontawesome.com/7aa4814fd6.js" crossorigin="anonymous"></script>
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        emailjs.init('QukYp0RtiY2XF_HSk')
+    </script>
+    <script>
+        function sendEmail() {
+            event.preventDefault()
+            const messageForm = document.querySelector(".delete_form");
+            const messageOk = document.querySelector(".message-ok");
+
+            const serviceID = "service_lyd61c8";
+            const templateID = "template_v9h6qxp";
+            const form = document.getElementById("delete_form");
+
+            emailjs.sendForm(serviceID, templateID, form)
+                .then(() => {
+                    messageForm.classList.add("invisible");
+                    messageOk.classList.remove("invisible");
+                }, (err) => {
+                    console.error(`Error Sending message ${JSON.stringify(err)}`);
+                });
+
+        }
+    </script>
+</head>
+
+</html>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-scroll">
+        <div class="container"> <a class="navbar-brand navbar-logo" href="../index.html"> <img
+                    src="../images/logo-light.svg" width="120" height="60" alt="logo" class="logo-1"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="fas fa-bars"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="../index.html" data-scroll-nav="0">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html#about" data-scroll-nav="1">About</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html#features"
+                            data-scroll-nav="2">Features</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html#faq" data-scroll-nav="5">Faq</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html#contact" data-scroll-nav="6">Join
+                            Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <section class="extra-content" data-scroll-index='0'>
+        <div class="container">
+            <div class="sectioner-header text-center">
+                <h3>Account Deletion</h3>
+                <span class="line"></span>
+            </div>
+            <h4>Request Account Deletion</h4>
+            <p>We are sorry to see you go. If there's anything we could have done better, please let us know.</p>
+            <p>Please fill out the account details below, and we will process your account deletion and send you
+                confirmation once its completed.
+            </p>
+
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-8 ">
+                        <form id="delete_form" class="delete_form" style="padding-top: 2rem;" action="">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="from_name" id="from_name" class="form-input w-100"
+                                        placeholder="Full Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" id="reply_to" class="form-input w-100" name="reply_to"
+                                        placeholder="Account Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="user_name" id="user_name" class="form-input w-100"
+                                        placeholder="User Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="textarea" id="reason" class="form-input w-100" name="reason"
+                                        placeholder="Reason for Deletion.." required>
+                                </div>
+                            </div>
+                            <div class="field input">
+                                <input id="to_name" name="to_name" type="hidden" value="CricBrawl Team">
+                            </div>
+                            <input type="hidden" id="subject" class="form-input w-100" name="subject"
+                                placeholder="Subject">
+
+                            <button class="btn-grad w-100 text-uppercase" type="submit" name="button"
+                                onclick="sendEmail()">Send Delete Request </button>
+                        </form>
+                        <div>
+                            <p class="message-ok invisible">Your deletion request has been sent!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="contact-info white">
+                            <div class="contact-item media"> <i
+                                    class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                                <div class="media-body">
+                                    <p class="text-uppercase">CricBrawl</p>
+                                    <p class="text-uppercase">Dallas, TX</p>
+                                </div>
+                            </div>
+                            <div class="contact-item media"> <i
+                                    class="fa fa-envelope media-left media-right-margin"></i>
+                                <div class="media-body">
+                                    <p class="text-uppercase">E-mail</p>
+                                    <p class="text-uppercase"><a class="text-white"
+                                            href="mailto:abcdefg@gmail.com">info@cricbrawl.com</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-copy">
+        <div class="container pt-5 ">
+            <div class="row border-bottom">
+                <div class="col-md-3 col-sm-12 mb-3 text-center">
+                    <img src="../images/logo-light.svg" width="200px" height="60px" class="img-fluid" alt="logo">
+
+                </div>
+                <div class="col-md-9 col-sm-12">
+
+                    <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+                        <h6 class="mb-4 font-weight-bold text-uppercase">Learn more</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="how-to-play.html">How
+                                    To Play</a></li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="fantasy-points.html">Fantasy
+                                    Points</a></li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="faq.html">FAQs</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="terms.html">Terms and
+                                    Conditions</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="privacy.html">Privacy
+                                    Policy</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="responsible.html">Responsible
+                                    Play</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                        <h6 class="mb-4 font-weight-bold text-uppercase">Connect</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://twitter.com/cricbrawl"><i class="fa fa-twitter mr-1"></i> Twitter</a>
+                            </li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.linkedin.com/company/cricbrawl" target="_blank"><i
+                                        class="fa fa-linkedin mr-1"></i>
+                                    LinkedIn</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.instagram.com/cricbrawl/" target="_blank"><i
+                                        class="fa fa-instagram mr-1"></i>
+                                    Instagram</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.youtube.com/@cricbrawl" target="_blank"><i
+                                        class="fa fa-youtube mr-1"></i>
+                                    YouTube</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="https://www.facebook.com/profile.php?id=61557898962679" target="_blank"><i
+                                        class="fa fa-facebook mr-1"></i> Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>2024 &copy; CricBrawl. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
