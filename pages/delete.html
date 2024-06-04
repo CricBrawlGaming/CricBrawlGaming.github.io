@@ -94,7 +94,8 @@
             <div class="section-content">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-8 ">
-                        <form id="delete_form" class="delete_form" style="padding-top: 2rem;" action="">
+                        <form id="delete_form" class="delete_form" style="padding-top: 2rem;" action=""
+                            onsubmit="sendEmail()">
                             <div class="row">
                                 <div class="col">
                                     <input type="text" name="from_name" id="from_name" class="form-input w-100"
@@ -102,7 +103,8 @@
                                 </div>
                                 <div class="col">
                                     <input type="email" id="reply_to" class="form-input w-100" name="reply_to"
-                                        placeholder="Account Email" required>
+                                        pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                        title="Please enter a valid email address" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -121,8 +123,8 @@
                             <input type="hidden" id="subject" class="form-input w-100" name="subject"
                                 placeholder="Subject">
 
-                            <button class="btn-grad w-100 text-uppercase" type="submit" name="button"
-                                onclick="sendEmail()">Send Delete Request </button>
+                            <input class="btn-grad w-100 text-uppercase" type="submit" value="Send Delete Request"
+                                name="button" />
                         </form>
                         <div>
                             <p class="message-ok invisible">Your deletion request has been sent!</p>
