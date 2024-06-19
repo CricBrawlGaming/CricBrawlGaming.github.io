@@ -35,12 +35,12 @@
     <script>
         function sendEmail() {
             event.preventDefault()
-            const messageForm = document.querySelector(".delete_form");
+            const messageForm = document.querySelector(".support_form");
             const messageOk = document.querySelector(".message-ok");
 
             const serviceID = "service_lyd61c8";
             const templateID = "template_v9h6qxp";
-            const form = document.getElementById("delete_form");
+            const form = document.getElementById("support_form");
 
             emailjs.sendForm(serviceID, templateID, form)
                 .then(() => {
@@ -82,19 +82,23 @@
     <section class="extra-content" data-scroll-index='0'>
         <div class="container">
             <div class="sectioner-header text-center">
-                <h3>Account Deletion</h3>
+                <h3>Support</h3>
                 <span class="line"></span>
             </div>
-            <h4>Request Account Deletion</h4>
-            <p>We are sorry to see you go. If there's anything we could have done better, please let us know.</p>
-            <p>Please fill out the account details below, and we will process your account deletion and send you
-                confirmation once its completed.
-            </p>
 
-            <div class="section-content">
+
+            <section class="faq-section">
+                <h5>Frequently Asked Questions</h5>
+                <p>Find answers to common questions <a href="faq.html">here</a>.</p>
+            </section>
+
+            <section class="contact-section">
+                <h5>Contact Us</h5>
+                <p>If you have further questions, feel free to email us at <a
+                        href="mailto:info@cricbrawl.com">info@cricbrawl.com</a> or use the form below:</p>
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-8 ">
-                        <form id="delete_form" class="delete_form" style="padding-top: 2rem;" action=""
+                        <form id="support_form" class="support_form" style="padding-top: 2rem;" action=""
                             onsubmit="sendEmail()">
                             <div class="row">
                                 <div class="col">
@@ -109,12 +113,10 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" name="user_name" id="user_name" class="form-input w-100"
-                                        placeholder="User Name" required>
-                                </div>
-                                <div class="col">
+                                    <input type="hidden" name="user_name" id="user_name" class="form-input w-100"
+                                        value="Support request">
                                     <input type="textarea" id="reason" class="form-input w-100" name="reason"
-                                        placeholder="Reason for Deletion.." required>
+                                        placeholder="Message" required>
                                 </div>
                             </div>
                             <div class="field input">
@@ -123,11 +125,10 @@
                             <input type="hidden" id="subject" class="form-input w-100" name="subject"
                                 placeholder="Subject">
 
-                            <input class="btn-grad w-100 text-uppercase" type="submit" value="Send Delete Request"
-                                name="button" />
+                            <input class="btn-grad w-100 text-uppercase" type="submit" value="Submit" name="button" />
                         </form>
                         <div>
-                            <p class="message-ok invisible">Your deletion request has been sent!</p>
+                            <p class="message-ok invisible">Your request has been sent!</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4">
@@ -150,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
